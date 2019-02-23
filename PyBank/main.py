@@ -75,11 +75,11 @@ with open(budgetfile, 'r') as csvfile:
     #print analysis to file
 
     with open('PyBank.txt', 'w') as text_file:
-        print(f"Financial Analysis:\n")
-        print("-------------------------------------------------------\n")
-        print(f"Total Months: {count_months}\n")
-        print(f"Net Total Profit or Loss: ${total_revenue}\n")
-        print(f"Average Change: ${average_revenue_change}\n")
-        print(f"Greatest Increase in Profits: {max_month} ${round(max_revenue)}\n")
-        print(f"Greatest Decrease in Profits: {min_month} ${round(min_revenue)}\n")
-        print("")
+
+        print(f"Financial Analysis:", file=text_file)
+        print("-------------------------------------------------------", file=text_file)
+        print(f"Total Months: {count_months}", file=text_file)
+        print(f"Net Total Profit or Loss: ${total_revenue}", file=text_file)
+        print(f"Average Change: ${average_revenue_change}", file=text_file)
+        print(f"Greatest Increase in Profits: {max_month} ${round(max_revenue)}", file=text_file)
+        print(f"Greatest Decrease in Profits: {min_month} ${round(min_revenue)}", file=text_file)

@@ -8,7 +8,7 @@ votes_sum = 0
 vote_counts = []
 
 # create file path and save as file
-pollfile = os.path.join(".", "election_data.csv")
+pollfile = os.path.join(".", "election_data.csv") #note: I had the csv file in the same folder, but could not upload it.
 
 #open the file
 with open(pollfile, 'r') as csvfile:
